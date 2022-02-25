@@ -1,0 +1,64 @@
+Notes
+
+root w/o $sudo pkexec
+# in script is for "internal notes"
+nano: text editor for terminal
+sudo: root access
+echo $hostname (To get device names)
+ 
+
+
+-DD instructions- (code is case sensative)
+
+	#Open GParted to check discs (if no luck use $sudo gnome-disks 
+
+Code: $sudo dd if=/dev/#DRIVENAME of=/dev/#DRIVENAME conv=sync,noerror status=progress
+
+------------------------------------------------------------------------------------------
+
+ls #lists current directory 
+~ #always means "home folder"
+pwd #where you are at in the file system
+ls -a #shows hidden folders 
+ls -l #wether a file or directory
+#auto fill will be your friend LEARN IT
+.. #at the end / ~ #go back 
+file .#File_Name #This will tell you what the ls a- file type is 
+locate #File_Name #To locate a certain file 
+$sudo updatedb #Update database 
+which #Command_Name #This will tell you if that command is installed or not 
+history #Track the last 1000 commands used in terminal 
+whatis #Command_Name #Explains what that command does
+man #Command_Name #In depth way to view a certain commands info
+mkdir #NAME #Makes a directory 
+cp #will create a copy of a file 
+mv #File_Name #To move a file 
+rm #File_Name #Removes a file 
+rm -r #Directory_Name #To remove a directory 
+rmdir #Directory_Name #Only way to remove a directory with no files in it
+cat >> #File_Name #To add any text you type into that directory
+less #File_Name #Scroll option to read a text hit Q leave
+sudo -s #To stay in root for extended time
+exit #To leave Sudo -s 
+uname #OS information 
+su - #USER_NAME #To switch to another user 
+users #Tells you who all is logged into that machine
+CTRL + C #Kill a command
+CTRL + L #Clears terminal screen
+xev #Shows all inputs from mouse/keyboard
+
+
+-------------------------------------------------------------------------------------------
+
+
+Learn /ETC/FStab 
+Learn crontab!!!!  
+
+lsmod #
+lsusb
+ctrl alt f #Open file browser
+ctrl alt x #kill 
+lsusb #Lists devices plugged in
+lsblk #lists hard drives
+openbox --exit #To quit openbox
+cd usr/share/xsessions/
