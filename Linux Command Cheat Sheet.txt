@@ -1,0 +1,30 @@
+Linux Command List
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+DD Command Line: $sudo dd if=/dev/#Drivename of=/dev/#Drivename conv=sync status=progress
+root user: $sudo pkexec 
+Device names: echo $hostname
+list the directory you are in: ls
+list hidden folders: ls -a
+list if file or directory: ls -l
+where you are in the file system: pwd
+to locate a file: locate #FILENAME
+check if command is installed or not: which #Command
+what that command does: whatis #Command
+command manual: man #Command
+to make a file directory: mkdir #Name
+to create a copy of a file: cp #Filename 
+to move a file: mv #Filename 
+to remove a file: rm #Filename 
+to remove a file directory: rm -r #Directoryname 
+to check OS information: uname
+to switch to another user: su #Username
+to see who is all logged into machine: users 
+to kill a command: CTRL + C 
+to clear a terminal: CTRL + L
+to show all inputs from mouse & keyboard: $xev
+to open a file browser: CTRL + ALT + F 
+to kill a window: CTRL + ALT + X
+to list devices plugged in: lsusb 
+to list hard drives: lsblk
+to quit openbox: --exit 
